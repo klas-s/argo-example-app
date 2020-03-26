@@ -54,7 +54,8 @@ metadata:
     ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - http:
+  - host: myapp.local
+    http:
       paths:
       - path: /foo
         backend:
