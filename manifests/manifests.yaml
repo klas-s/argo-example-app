@@ -65,4 +65,8 @@ spec:
         backend:
           serviceName: bar-service
           servicePort: 5678
+  tls:
+  - hosts:
+    - myapp.local
+    secretName: localhost-tls
 ---
